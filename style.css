@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@1&family=Montserrat:ital,wght@0,100;0,300;0,900;1,100&family=Nunito+Sans:opsz@6..12&family=Poppins:wght@200;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  position: relative;
+  font-family: "Nunito Sans", sans-serif;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: -50px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 9fr;
+  position: absolute;
+  height: 85%;
+  width: fit-content;
+}
+
+.top {
+  display: flex;
+  flex-wrap: initial;
+  gap: 25px;
+  align-items: center;
+  padding: 20px;
+}
+
+.top > input {
+  min-width: 650px;
+  height: 30px;
+  border-color: #8e8e8e;
+  background-color: black;
+  color: white;
+  outline: none;
+  font-size: 18px;
+  padding: 5px 15px;
+}
+
+.top > div {
+  min-width: 100px;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.top > div:hover {
+  background-color: rgb(238, 245, 238);
+  color: black;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 200px 100px 100px 100px 100px 200px;
+  padding: 10px;
+  border-bottom: 1px solid white;
+  align-items: center;
+  gap: 50px;
+}
+.item div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+.item img {
+  height: 20px;
+  width: 20px;
+}
+
+.dec {
+  color: red;
+}
+
+.inc {
+  color: green;
+}
